@@ -228,14 +228,9 @@
 			width: 100%;
 			padding: 0 0 300px 0;
 		}
-		canvas {
-			@media screen and (max-width:$mediaSp) {
-				max-width: 300px;
-				padding: 0 0 300px 0;
-			}
-		}
 	}
 
+	
 	.WorksImage01 {
 		background-image:url("../images/works01.png");
 		margin: 300px 0 0 auto;
