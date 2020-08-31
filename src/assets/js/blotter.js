@@ -71,7 +71,7 @@ const text02 = new Blotter.Text('Distortion', {
 });
 const text03 = new Blotter.Text('Portfolio vol.1', {
     family: 'Cormorant Garamond, serif', //font-family
-    size: 120, //font-size
+    size: 90, //font-size
     fill: "white" //color
 });
 const text04 = new Blotter.Text('Sin Wave', {
@@ -82,7 +82,7 @@ const text04 = new Blotter.Text('Sin Wave', {
 
 const text05 = new Blotter.Text('Hello World', {
     family: 'Cormorant Garamond, serif', //font-family
-    size: 120, //font-size
+    size: 100, //font-size
     fill: "white" //color
 });
 
@@ -108,11 +108,11 @@ const scope03 = blotter03.forText(text03);
 const scope04 = blotter04.forText(text04);
 const scope05 = blotter05.forText(text05);
 
-let el01 = document.querySelector(".WorksImage01");
-let el02 = document.querySelector(".WorksImage02");
-let el03 = document.querySelector(".WorksImage03");
-let el04 = document.querySelector(".WorksImage04");
-let el05 = document.querySelector(".WorksImage05");
+let el01 = document.querySelector(".WorksArea01__title");
+let el02 = document.querySelector(".WorksArea02__title");
+let el03 = document.querySelector(".WorksArea03__title");
+let el04 = document.querySelector(".WorksArea04__title");
+let el05 = document.querySelector(".WorksArea05__title");
 
 
 scope01.appendTo(el01);

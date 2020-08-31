@@ -16,16 +16,6 @@ body {
   z-index: -2;
   -webkit-transition: 0.5s;
   transition: 0.5s; }
-  body:after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/noise02.gif");
-    opacity: .05;
-    z-index: 0; }
 
 .changed {
   background: black;
@@ -346,9 +336,8 @@ main {
     margin: 0 auto; }
     @media screen and (max-width: 900px) {
       .Works .WorksImageWrap {
-        width: 100%;
-        padding: 0 50px; } }
-  .Works .WorksImage {
+        width: 100%; } }
+  .Works .WorksArea {
     width: 900px;
     padding: 0 0 550px 0;
     background-position: center;
@@ -356,24 +345,32 @@ main {
     position: relative;
     font-size: 0; }
     @media screen and (max-width: 900px) {
-      .Works .WorksImage {
+      .Works .WorksArea {
         max-width: 100%;
         padding: 0; } }
-    .Works .WorksImage canvas {
+    .Works .WorksArea canvas {
       max-width: 100%; }
-  .Works .WorksImage01 {
+  .Works .WorksArea01 {
+    width: 900px;
+    padding: 0 0 550px 0;
     background-image: url("../images/works01.png");
-    margin: 300px 0 0 auto; }
-    .Works .WorksImage01 .WorkImage__title {
+    margin: 200px 0 0 auto;
+    position: relative; }
+    @media screen and (max-width: 900px) {
+      .Works .WorksArea01 {
+        max-width: 100%;
+        padding: 0 0 300px 0; } }
+    .Works .WorksArea01__title {
       font-size: 0;
       position: absolute;
-      top: 225px;
-      left: -230px; }
+      top: 250px;
+      left: -250px; }
       @media screen and (max-width: 900px) {
-        .Works .WorksImage01 .WorkImage__title {
+        .Works .WorksArea01__title {
+          width: 100%;
           font-size: 0;
           position: absolute;
-          top: 500px;
+          top: 200px;
           bottom: 0px;
           left: 0; } }
   .Works .WorksImage02 {
