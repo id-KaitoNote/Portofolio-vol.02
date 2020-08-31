@@ -1,0 +1,71 @@
+
+$mainColor:#090909;
+// $mainColor:white;
+$subColor: white;
+$mediaSp: 900px;
+
+@mixin more-link {
+	width: 200px;
+	display: block;
+	margin: 200px auto 0;
+	padding: 20px 20px;
+	color: $subColor;
+	// border: solid 1px $subColor;
+	text-align: center;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+	    top:25px;
+		right: 20px;
+		width: 10px;
+		height: 10px;
+		background: $mainColor;
+		border-width:1px 1px 0 0;
+		border-color: $subColor;
+		border-style:solid;
+		transform: rotate(45deg);
+	}
+	&::after {
+		content: '';
+		position: absolute;
+	    top: 50%;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background: $subColor;
+	}
+	&:hover::after {
+		animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) ;
+	}
+	@keyframes sdl {
+		0% {
+		transform: scale(0, 1);
+		transform-origin: 0 0;
+		}
+		50% {
+		transform: scale(1, 1);
+		transform-origin: 0 0;
+		}
+		50.1% {
+		transform: scale(1, 1);
+		transform-origin: 100% 0;
+		}
+		100% {
+		transform: scale(1, 1);
+		transform-origin: 100% 100%;
+		}
+	}
+}
+
+@mixin link-hover {
+	content: '';
+	width: 0;
+	height: 1px;
+	background: $subColor;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transition: all 0.2s ease 0s;
+}
+
