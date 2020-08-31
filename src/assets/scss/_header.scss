@@ -1,6 +1,7 @@
 
 
 header {
+	width: 100%;
 	margin: 0px 80px;
 	padding: 30px 80px;
 	display: flex;
@@ -8,6 +9,7 @@ header {
 	align-items: center;
 	color: $subColor;
 	@media screen and (max-width:$mediaSp) {
+		width: 100%;
 		margin: 0px 40px;
 		padding: 30px 0;
 	}
@@ -22,6 +24,9 @@ header {
 	}
 	.Menu {
 		display: flex;
+		@media screen and (max-width:$mediaSp) {
+			display: none;
+		}
 			&__list {
 				margin: 0 0 0 60px;
 				position: relative;
