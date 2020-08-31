@@ -32,32 +32,94 @@ material.uniforms.uSeed.value = 0.4;
 
 // Blotterのインスタンスを作成
 
-const blotter = new Blotter(material);
+
 
 // data-blotterを持つすべてのHTML要素においてBlotterテキストを初期化
 
-const blotterElems = [...document.querySelectorAll('[data-blotter]')];
+// const blotterElems = [...document.querySelectorAll('[data-blotter]')];
 
 
-blotterElems.forEach((el) => {
+// blotterElems.forEach((el) => {
 
-    const text = new Blotter.Text(el.innerHTML, {
-        family: 'Cormorant Garamond, serif', //font-family
-        size: 120, //font-size
-        fill: "white" //color
-    });
+//     const text = new Blotter.Text(el.innerHTML, {
+//         family: 'Cormorant Garamond, serif', //font-family
+//         size: 120, //font-size
+//         fill: "white" //color
+//     });
 
-    // const text = new Blotter.Text(el.innerHTML);
-    blotter.addText(text);
+//     // const text = new Blotter.Text(el.innerHTML);
+//     blotter.addText(text);
 
-    // ここでHTMLコンテンツを削除
-    // 作成されたキャンバス
-    const scope = blotter.forText(text);
+//     // ここでHTMLコンテンツを削除
+//     // 作成されたキャンバス
+//     const scope = blotter.forText(text);
 
-    // メイン要素に添える
-    scope.appendTo(el);
+//     // メイン要素に添える
+//     scope.appendTo(el);
 
+// });
+
+const text01 = new Blotter.Text('Jelly Fish', {
+    family: 'Cormorant Garamond, serif', //font-family
+    size: 120, //font-size
+    fill: "white" //color
 });
+const text02 = new Blotter.Text('Distortion', {
+    family: 'Cormorant Garamond, serif', //font-family
+    size: 120, //font-size
+    fill: "white" //color
+});
+const text03 = new Blotter.Text('Portfolio vol.1', {
+    family: 'Cormorant Garamond, serif', //font-family
+    size: 120, //font-size
+    fill: "white" //color
+});
+const text04 = new Blotter.Text('Sin Wave', {
+    family: 'Cormorant Garamond, serif', //font-family
+    size: 120, //font-size
+    fill: "white" //color
+});
+
+const text05 = new Blotter.Text('Hello World', {
+    family: 'Cormorant Garamond, serif', //font-family
+    size: 120, //font-size
+    fill: "white" //color
+});
+
+const blotter01 = new Blotter(material, {
+    texts: text01
+});
+const blotter02 = new Blotter(material, {
+    texts: text02
+});
+const blotter03 = new Blotter(material, {
+    texts: text03
+});
+const blotter04 = new Blotter(material, {
+    texts: text04
+});
+const blotter05 = new Blotter(material, {
+    texts: text05
+});
+
+const scope01 = blotter01.forText(text01);
+const scope02 = blotter02.forText(text02);
+const scope03 = blotter03.forText(text03);
+const scope04 = blotter04.forText(text04);
+const scope05 = blotter05.forText(text05);
+
+let el01 = document.querySelector(".WorksImage01");
+let el02 = document.querySelector(".WorksImage02");
+let el03 = document.querySelector(".WorksImage03");
+let el04 = document.querySelector(".WorksImage04");
+let el05 = document.querySelector(".WorksImage05");
+
+
+scope01.appendTo(el01);
+scope02.appendTo(el02);
+scope03.appendTo(el03);
+scope04.appendTo(el04);
+scope05.appendTo(el05);
 
 
 // ここで、スクロールすると1つ（またはそれ以上）のuniform値が変化するようにする
