@@ -223,9 +223,16 @@
 		background-position: center;
 		background-size: cover;
 		position:relative;
+		font-size: 0;
 		@media screen and (max-width:$mediaSp) {
 			width: 100%;
 			padding: 0 0 300px 0;
+		}
+		canvas {
+			@media screen and (max-width:$mediaSp) {
+				max-width: 300px;
+				padding: 0 0 300px 0;
+			}
 		}
 	}
 
