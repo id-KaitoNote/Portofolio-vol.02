@@ -43,7 +43,7 @@ blotterElems.forEach((el) => {
 
     const text = new Blotter.Text(el.innerHTML, {
         family: 'Cormorant Garamond, serif', //font-family
-        size: 180, //font-size
+        size: 120, //font-size
         fill: "white" //color
     });
 
