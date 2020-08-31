@@ -20,7 +20,7 @@ function init() {
 
     // カメラを作成
     const camera = new THREE.PerspectiveCamera(45, width / height);
-    camera.position.set(-0.7, 0, 4);//カメラの初期位置
+    camera.position.set(0, 0, 4);//カメラの初期位置
     // camera.lookAt(scene.position);//原点にカメラを向ける
 
     const geometry = new THREE.TetrahedronGeometry(1.0);

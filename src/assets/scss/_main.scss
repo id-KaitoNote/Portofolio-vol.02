@@ -4,19 +4,21 @@
 
 main {
 	width: 100%;
-	padding: 0 40px;
+	padding: 0 80px;
+	@media screen and (max-width:$mediaSp) {
+		padding: 0 40px;
+	}
 }
 
 .Main {
 	width: 100%;
-	margin: 0 120px 160px;
+	margin: 0 0 160px;
 	padding: 300px 0 300px 100px;
 	border: 1px solid $subColor;
 	color: $mainColor;
 	// position: relative;
 	@media screen and (max-width:$mediaSp) {
-		padding: 300px 20px 50px 50px;
-		margin: 50px 0 0 0 ;
+		padding: 150px 20px 150px 50px;
 	}
 	&__canvas {
 		position: absolute;
@@ -25,9 +27,12 @@ main {
 		z-index: 2;
 	}
 	&__title {
-		font-size: 60px;
+		font-size: 120px;
 		color: $subColor;
 		font-family: 'Cormorant Garamond';
+		@media screen and (max-width:$mediaSp) {
+			font-size: 60px;
+		}
 	}
 	&__sub-title {
 		font-size: 20px;
@@ -227,8 +232,6 @@ main {
 
 
 	.WorksArea {
-		width: 900px;
-		padding: 0 0 550px 0;
 		background-position: center;
 		background-size: cover;
 		position:relative;
@@ -271,79 +274,122 @@ main {
 
 	}
 	
-
-
-
-
-	.WorksImage02 {
+	.WorksArea02 {
+		width: 900px;
+		padding: 0 0 550px 0;
 		background-image:url("../images/works02.png");
-		margin: 300px auto 0 0;		
-		.WorkImage__title  {
+		margin: 200px auto 0 ;
+		position: relative;
+
+		@media screen and (max-width:$mediaSp) {
+			max-width: 100%;
+			padding: 0 0 300px 0;
+		}
+
+		&__title  {
 			font-size: 0;
 			position: absolute;
-			top: 225px;
-			right: -230px;
+			top: 250px;
+			right: -250px;
 			@media screen and (max-width:$mediaSp) {
+				width: 100%;
 				font-size: 0;
 				position: absolute;
-				top: 0;
-				bottom: 0;
+				top: 200px;
+				bottom: 0px;
 				left: 0;
 			}
-			
-		}	
+		}
+
 	}
-	.WorksImage03 {
+
+	.WorksArea03 {
+		width: 900px;
+		padding: 0 0 550px 0;
 		background-image:url("../images/works03.png");
-		margin: 300px 0 0 auto;	
-		.WorkImage__title  {
+		margin: 200px 0 0 auto;
+		position: relative;
+
+		@media screen and (max-width:$mediaSp) {
+			max-width: 100%;
+			padding: 0 0 300px 0;
+		}
+
+		&__title  {
 			font-size: 0;
 			position: absolute;
-			top: 225px;
-			left: -230px;
+			top: 250px;
+			left: -250px;
 			@media screen and (max-width:$mediaSp) {
+				width: 100%;
 				font-size: 0;
 				position: absolute;
-				top: 0;
-				bottom: 0;
+				top: 200px;
+				bottom: 0px;
 				left: 0;
 			}
-		}	
+		}
+
 	}
-	.WorksImage04 {
+
+	.WorksArea04 {
+		width: 900px;
+		padding: 0 0 550px 0;
 		background-image:url("../images/works04.png");
-		margin: 300px auto 0 0;	
-		.WorkImage__title  {
+		margin: 200px auto 0 0;
+		position: relative;
+
+		@media screen and (max-width:$mediaSp) {
+			max-width: 100%;
+			padding: 0 0 300px 0;
+		}
+
+		&__title  {
 			font-size: 0;
 			position: absolute;
-			top: 225px;
-			right: -230px;
+			top: 250px;
+			right: -250px;
 			@media screen and (max-width:$mediaSp) {
+				width: 100%;
 				font-size: 0;
 				position: absolute;
-				top: 0;
+				top: 200px;
 				bottom: 0;
 				left: 0;
 			}
 		}
+
 	}
-	.WorksImage05 {
+
+	.WorksArea05 {
+		width: 900px;
+		padding: 0 0 550px 0;
 		background-image:url("../images/works05.png");
-		margin: 300px 0 0 auto;		
-		.WorkImage__title  {
+		margin: 200px 0 0 auto;
+		position: relative;
+
+		@media screen and (max-width:$mediaSp) {
+			max-width: 100%;
+			padding: 0 0 300px 0;
+		}
+
+		&__title  {
 			font-size: 0;
 			position: absolute;
-			top: 225px;
-			left: -230px;
+			top: 250px;
+			left: -250px;
 			@media screen and (max-width:$mediaSp) {
+				width: 100%;
 				font-size: 0;
 				position: absolute;
-				top: 0;
-				bottom: 0;
+				top: 200px;
+				bottom: 0px;
 				left: 0;
 			}
 		}
+
 	}
+
 
 
 

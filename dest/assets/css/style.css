@@ -69,7 +69,6 @@ body {
 
 header {
   width: 100%;
-  margin: 0px 80px;
   padding: 30px 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,9 +83,11 @@ header {
   @media screen and (max-width: 900px) {
     header {
       width: 100%;
-      margin: 0px 40px;
-      padding: 30px 0;
-      display: none; } }
+      margin: 0;
+      padding: 30px 40px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
   header .Logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -123,27 +124,32 @@ header {
 /* HEADER  */
 main {
   width: 100%;
-  padding: 0 40px; }
+  padding: 0 80px; }
+  @media screen and (max-width: 900px) {
+    main {
+      padding: 0 40px; } }
 
 .Main {
   width: 100%;
-  margin: 0 120px 160px;
+  margin: 0 0 160px;
   padding: 300px 0 300px 100px;
   border: 1px solid white;
   color: #090909; }
   @media screen and (max-width: 900px) {
     .Main {
-      padding: 300px 20px 50px 50px;
-      margin: 50px 0 0 0; } }
+      padding: 150px 20px 150px 50px; } }
   .Main__canvas {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2; }
   .Main__title {
-    font-size: 60px;
+    font-size: 120px;
     color: white;
     font-family: 'Cormorant Garamond'; }
+    @media screen and (max-width: 900px) {
+      .Main__title {
+        font-size: 60px; } }
   .Main__sub-title {
     font-size: 20px;
     color: white;
@@ -338,8 +344,6 @@ main {
       .Works .WorksImageWrap {
         width: 100%; } }
   .Works .WorksArea {
-    width: 900px;
-    padding: 0 0 550px 0;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -373,65 +377,97 @@ main {
           top: 200px;
           bottom: 0px;
           left: 0; } }
-  .Works .WorksImage02 {
+  .Works .WorksArea02 {
+    width: 900px;
+    padding: 0 0 550px 0;
     background-image: url("../images/works02.png");
-    margin: 300px auto 0 0; }
-    .Works .WorksImage02 .WorkImage__title {
+    margin: 200px auto 0;
+    position: relative; }
+    @media screen and (max-width: 900px) {
+      .Works .WorksArea02 {
+        max-width: 100%;
+        padding: 0 0 300px 0; } }
+    .Works .WorksArea02__title {
       font-size: 0;
       position: absolute;
-      top: 225px;
-      right: -230px; }
+      top: 250px;
+      right: -250px; }
       @media screen and (max-width: 900px) {
-        .Works .WorksImage02 .WorkImage__title {
+        .Works .WorksArea02__title {
+          width: 100%;
           font-size: 0;
           position: absolute;
-          top: 0;
-          bottom: 0;
+          top: 200px;
+          bottom: 0px;
           left: 0; } }
-  .Works .WorksImage03 {
+  .Works .WorksArea03 {
+    width: 900px;
+    padding: 0 0 550px 0;
     background-image: url("../images/works03.png");
-    margin: 300px 0 0 auto; }
-    .Works .WorksImage03 .WorkImage__title {
+    margin: 200px 0 0 auto;
+    position: relative; }
+    @media screen and (max-width: 900px) {
+      .Works .WorksArea03 {
+        max-width: 100%;
+        padding: 0 0 300px 0; } }
+    .Works .WorksArea03__title {
       font-size: 0;
       position: absolute;
-      top: 225px;
-      left: -230px; }
+      top: 250px;
+      left: -250px; }
       @media screen and (max-width: 900px) {
-        .Works .WorksImage03 .WorkImage__title {
+        .Works .WorksArea03__title {
+          width: 100%;
           font-size: 0;
           position: absolute;
-          top: 0;
-          bottom: 0;
+          top: 200px;
+          bottom: 0px;
           left: 0; } }
-  .Works .WorksImage04 {
+  .Works .WorksArea04 {
+    width: 900px;
+    padding: 0 0 550px 0;
     background-image: url("../images/works04.png");
-    margin: 300px auto 0 0; }
-    .Works .WorksImage04 .WorkImage__title {
+    margin: 200px auto 0 0;
+    position: relative; }
+    @media screen and (max-width: 900px) {
+      .Works .WorksArea04 {
+        max-width: 100%;
+        padding: 0 0 300px 0; } }
+    .Works .WorksArea04__title {
       font-size: 0;
       position: absolute;
-      top: 225px;
-      right: -230px; }
+      top: 250px;
+      right: -250px; }
       @media screen and (max-width: 900px) {
-        .Works .WorksImage04 .WorkImage__title {
+        .Works .WorksArea04__title {
+          width: 100%;
           font-size: 0;
           position: absolute;
-          top: 0;
+          top: 200px;
           bottom: 0;
           left: 0; } }
-  .Works .WorksImage05 {
+  .Works .WorksArea05 {
+    width: 900px;
+    padding: 0 0 550px 0;
     background-image: url("../images/works05.png");
-    margin: 300px 0 0 auto; }
-    .Works .WorksImage05 .WorkImage__title {
+    margin: 200px 0 0 auto;
+    position: relative; }
+    @media screen and (max-width: 900px) {
+      .Works .WorksArea05 {
+        max-width: 100%;
+        padding: 0 0 300px 0; } }
+    .Works .WorksArea05__title {
       font-size: 0;
       position: absolute;
-      top: 225px;
-      left: -230px; }
+      top: 250px;
+      left: -250px; }
       @media screen and (max-width: 900px) {
-        .Works .WorksImage05 .WorkImage__title {
+        .Works .WorksArea05__title {
+          width: 100%;
           font-size: 0;
           position: absolute;
-          top: 0;
-          bottom: 0;
+          top: 200px;
+          bottom: 0px;
           left: 0; } }
   .Works__more-link {
     width: 200px;
