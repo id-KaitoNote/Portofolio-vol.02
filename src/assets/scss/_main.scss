@@ -16,7 +16,7 @@ main {
 	// position: relative;
 	@media screen and (max-width:$mediaSp) {
 		padding: 300px 20px 50px 50px;
-		margin: 0;
+		margin: 50px 0 0 0 ;
 	}
 	&__canvas {
 		position: absolute;
@@ -238,7 +238,11 @@ main {
 			max-width: 100%;
 			padding: 0;
 		}
+		canvas {
+			max-width: 100%;
+		}
 	}
+	
 
 
 	.WorksImage01 {
@@ -252,8 +256,8 @@ main {
 			@media screen and (max-width:$mediaSp) {
 				font-size: 0;
 				position: absolute;
-				top: -50px;
-				bottom: 0;
+				top: 500px;
+				bottom: 0px;
 				left: 0;
 			}
 		}	
